@@ -1,0 +1,68 @@
+/* RESPONSIVE MEDIA QUERY */
+/* THIS ALLOWS TO CHANGE THE DISPLAY OF YOUR PAGE BASE ON DISPLAY SIZED */
+/* EXAMPLE ARE FROM PC TO TABLET TO CELLPHONE */
+
+
+/* .menu-btn i.active:before {
+        content: "\f00d"; } */
+
+
+
+/*                                         MEDIA QUERY START                                                        */
+@media screen and (max-device-width: 1900px) and (max-device-height: 1930px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    /* -----------                          iPhone X                                           ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body .home {
+            display: flex;
+            width: 100%;
+            height: 90.82vh;
+            background-position: -770px center;
+            font-size: 50%;
+        }
+
+        .logoImage {
+            display: none;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
+
+        .logoImage {
+            display: none;
+        }
+    }
+
+    .home .home-content .text-1 {}
+
+    .home .home-content .text-0 {}
+
+    .home .home-content .text-2 {
+        margin-top: 40%;
+        padding-left: 8px;
+        font-size: 310%;
+    }
+
+    .home .home-content .text-3 {}
+
+    .home .home-content .text-3 span {
+        margin-left: 2%;
+    }
+
+    .home .home-content a {
+        font-size: 300%;
+        margin-left: 0;
+    }
+
+
+}

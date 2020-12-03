@@ -1,0 +1,88 @@
+/*                                        EON MAIN PAGE                        */
+
+/* EON LOGO */
+.logoImage {
+    content: url("/assets/images/EON.jpg");
+    background: none;
+    height: 40vh;
+    width: auto;
+    display: flex;
+}
+
+
+/* EON MAIN PAGE */
+.home {
+    display: flex;
+    position: inherit;
+    background: url("/assets/images/Background-Eon.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: flex;
+    height: 100vh;
+    color: #2c85fad3;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: none;
+    width: 100%;
+}
+
+
+.home .max-width {
+    margin: 0;
+    padding-left: 0;
+}
+
+.home .home-content .text-1 {
+    font-size: 140%;
+    color: #ff00f7ce;
+    font-weight: 900;
+}
+
+.home .home-content .text-0 {
+    font-size: 130%;
+    color: #ff00f7ce;
+    font-weight: 900;
+}
+
+.home .home-content .text-2 {
+    font-size: 550%;
+}
+
+.home .home-content .text-3 {
+    font-size: 220%;
+}
+
+.home .home-content .text-3 span {
+    text-align: inherit;
+    font-size: 100%;
+    color: #ff00f7ce;
+    font-weight: 500;
+}
+
+.home .home-content .text-4 {
+    display: none;
+    font-size: 220%;
+}
+.home .home-content .text-4 span {
+    display: none;
+    text-align: inherit;
+    font-size: 100%;
+    color: #ff00f7ce;
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: #ff00f765;
+    color: white;
+    font-size: 300%;
+    padding: 12px 12px 12px 12px;
+    border-radius: 12px;
+    border: 3px solid #ff00f73f;
+    transition: 2s ease;
+}
+.home .home-content a:hover {
+    background: #2c85fad3;
+    color: #ff00f7ce;
+    border: none;
+}
