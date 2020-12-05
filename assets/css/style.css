@@ -15,18 +15,20 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 
 html body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
 .max-width {
-    max-width: auto;
-    margin: auto;
+    max-width: 2000px;
+
 }
 
 .max-height {
@@ -35,8 +37,24 @@ html body {
 
 section {
     padding: 10% 10% 10% 10%;
-    overflow: visible;
     
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff00f7ce;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2c85fad3;
 }
 
 .scroll-up-btn {

@@ -6,7 +6,7 @@ const stringFunctionHeader = headerTextAnimation();
 
 function mainTextAnimation() {
     return new Typed(".textStyle", {
-        strings: ["Artist", "Album", "Track", "Song", "DJ", "Genre", "Singer", "Band", ],
+        strings: ["Artists", "Albums", "Tracks", "Songs", "DJs", "Genres", "Singers", "Bands",  ],
         typeSpeed: 200,
         backSpeed: 50,
         loop: true,

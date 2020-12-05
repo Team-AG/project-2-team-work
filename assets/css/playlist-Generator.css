@@ -4,6 +4,7 @@
 
 .owl-carousel {
     transform: rotate(-13deg);
+    overflow: initial;
 }
 
 
@@ -17,25 +18,27 @@
     padding: 0;
     margin: 0;
     z-index: 5;
-    transform: translateY(-2%);
+    transition: all smooth;
 }
 
 
+
+
 .playlist-generator .title {
-    background: black;
     background-size: cover;
-    font-size: 190px;
+    font-size: 200px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 150px;
     letter-spacing: 15px;
     margin-left: -1%;
-    width: 100%;
-    z-index: 30;
-    transform: translateY(0%);
+    width: 63%;
+    z-index: 0;
+    transform:  translateX(35%);
+    ;
     opacity: 0.5;
-}
 
+}
 
 
 .playlist-generator .title::before {
@@ -61,21 +64,28 @@
     padding: 5px;
     background: #ff00f7ce;
     transform: translateX(-50%);
+
 }
 
 .playlist-generator .wrapper .title {
+    display: flex;
+    position: absolute;
     transition: color 1s ease;
-    color: #ff00f7ce;
-    background: linear-gradient(45deg, #ff00f76c 0%, #2c85fa73 15%, #aae9d1c0 30%, #2c85facc 45%, #ff00f7cb 60%, #2c85fabe 75%, #aae9d1cb 90%, #ff00f7bf 100%);
+    color: #2c85fad3;
+    background: linear-gradient(45deg, #ff00f723 0%, #2c85fa15 15%, #aae9d162 30%, #2c85fa62 45%, #ff00f744 60%, #2c85fa38 75%, #aae9d13d 90%, #ff00f721 100%);
     padding-left: 50px;
     opacity: 1;
-    padding-top: 20px;
-    padding-bottom: 250px;
+    padding-top: 50px;
+    padding-bottom: 900px;
+    transition: all 2s ease-in-out;
 }
 
 .playlist-generator .wrapper:hover .title {
-    color: #2c85fad3;
-    background: black;
+    color: #ff00f7ce;
+    background: none;
+    transition: all 1s ease-in;
+    border-top: #ff00f7 solid 80px;
+    transition: all 2s ease-in-out;
 }
 
 .playlist-generator .playlist-generator-content {
@@ -83,6 +93,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    overflow: visible;
 }
 
 .playlist-generator .carousel .card {
@@ -92,7 +103,8 @@
     padding-bottom: 10px;
     text-align: center;
     transition: all 1.2s ease;
-    transform: translateY(-40%);
+    transform: translateY(60%);
+
 }
 
 .playlist-generator .carousel .card:hover {
@@ -166,22 +178,23 @@
     border: 5px solid #ff00f7ce;
     transition: all 1.8s ease;
     padding: 50px;
-    margin-left: -80px;
+    margin-left: -60px;
     transform: rotateZ(13deg);
-    transition: all .4s ease-in;
+    transition: all .6s ease-in;
 }
 
 
 .playlist-generator .carousel .card:hover img {
-    transform: rotateZ(360deg) rotate(15deg) scale(1.5);
+    transform: rotateZ(360deg) rotate(15deg) scale(1.5) translateY(5%) translate(-20%);
     border-color: #2c85fad3;
     background: linear-gradient(90deg, #ff00f796 0%, #2c85fa3f 15%, #aae9d186 30%, #2c85fa98 45%, #ff00f796 60%, #2c85fa3f 75%, #aae9d186 90%, #ff00f796 100%);
     opacity: 0.2;
+
 }
 
-.playlist-generator .owl-carousel .owl-stage-outer{
+.playlist-generator .owl-carousel .owl-stage-outer {
     position: relative;
-    overflow:visible;
+    overflow: visible;
     max-width: -100%;
 
 }
@@ -214,4 +227,42 @@
 .owl-dot.active,
 .owl-dot:hover {
     background: #2c85fad3 !important;
+}
+
+
+.owl-nav button.owl-next {
+    background: none;
+    color: #2c85fad3 !important;
+    border: none;
+    padding: 0 !important;
+    font-size: 1400px !important;
+    transform: translateY(-57%) translateX(-265%) rotate(12deg);
+    z-index: 200;
+    margin: 0;
+    opacity: 0.4;
+    outline: none;
+    transition: all 1s ease
+}
+
+.owl-nav button.owl-prev {
+    background: none;
+    color: #2c85fad3 !important;
+    border: none;
+    padding: 0 !important;
+    font-size: 1400px !important;
+    transform: translateY(-56%) translateX(300%) rotate(0deg);
+    z-index: 200;
+    opacity: 0.4;
+    outline: none;
+    transition: all 1s ease
+}
+
+.owl-nav:hover button.owl-next {
+    color: #ff00f7ce !important;
+    opacity: 0.7;
+}
+
+.owl-nav:hover button.owl-prev {
+    color: #ff00f7ce !important;
+    opacity: 0.7;
 }
